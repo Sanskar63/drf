@@ -8,6 +8,9 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from products.serializer import ProductSerializer
 
+#GENERIC API VIEW
+from rest_framework import generics
+
 def api_home(request, *args, **kwargs):
     # request -> HttpRequest (not python requests)
     print(request.GET) # url query params
